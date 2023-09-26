@@ -1,0 +1,18 @@
+
+
+
+
+Bir web elementinin 3 bileşeni bulunur:
+
+
+
+*TAG : input
+*ATTRIBUTES : type,id,class
+*ATTRIBUTE VALUES : text, twotabsearchtextbox,fields-keyword
+
+//input[@placeholder='Search Amazon' örneği gibi
+
+//input[@...=''seklinde yazılabilir
+
+locate icin Xpath herşeyi çözer...
+
