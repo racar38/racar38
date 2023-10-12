@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="istenenPackagelariCalistirma">
+    <test name="day16 testleri">
+        <packages>
+            <package name="tests.day16_testNG_framework"></package>
+        </packages>
+        
+        
+    </test>
+</suite>
