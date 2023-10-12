@@ -7,7 +7,7 @@ import utilities.Driver;
 
 public class C01_DriverClassKullanimi {
 
-    @Test
+    @Test(groups = {"smoke"})
     public void amazonTest() {
 
         // amazon'a gidelim

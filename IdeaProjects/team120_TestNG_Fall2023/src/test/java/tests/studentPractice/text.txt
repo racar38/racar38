@@ -1,0 +1,15 @@
+TASK01:
+ 1-"https://www.amazon.com/" adresine gidin.
+ 2-dropdown menüsündeki webelementleri bir excel dosyasına aktarın. 1. sayfanın  1. sutununda sıra numarası yazsın , 2. sutunda ise dropdown menüsü yazsın.
+ 3- 28. SATIRDA "Women's Fashion" yazdığını test edin.
+ 4-DropDown menüsüne basarak açıldığını ve listenin göründüğünü fotoğraflayın
+ 5-DropDown webelementinin fotoğrafını çekin
+ TASK02:
+1- map kullanarak oluşturduğumuz excel dosyasında, dropdown listesinde 5. sıradaki elementin "Beauty & Personal Care"
+    olduğunu test edin ve bu satırın yanına testin sonucunu yazdırın
+TASK03:
+1- https://forum.shiftdelete.net/ adresine gidin.
+2- Youtube videosunun ortasındaki play logosuna tıklayın.
+3- videoda sağ alttaki youtube logosuna tıklayın.
+4- Yeni sayfa açıldığını test edin
+5- İlk Sayfaya dönerek bu sayfada arama kutusunun görünür olduğunu test edin.
