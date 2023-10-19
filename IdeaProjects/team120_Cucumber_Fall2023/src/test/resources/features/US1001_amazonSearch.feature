@@ -1,6 +1,7 @@
 
   Feature:US1001 Kullanici amazon anasayfada arama yapar
 
+    @smoke
     Scenario:TC01 Kullanici amazonda Nutella aratir
 
       Given kullanici amazonUrl anasayfaya gider

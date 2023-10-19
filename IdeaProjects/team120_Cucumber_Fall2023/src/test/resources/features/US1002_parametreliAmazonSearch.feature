@@ -8,10 +8,12 @@ Feature:US1002 Kullanici parametre olarak yazdigi urunu amazonda aratir
     Then 2 saniye bekler
     And sayfayi kapatir
 
-    Scenario:TC04 parametre ile apple aratir
+    
+  @smoke
+  Scenario:TC04 parametre ile apple aratir
 
       Given kullanici "amazonUrl" anasayfaya gider
-      And 10 saniye bekler
       Then arama kutusuna "apple" yazip aratir
+      And arama sonuclarinin "apple" icerdigini test eder
       Then 10 saniye bekler
       And sayfayi kapatir

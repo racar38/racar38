@@ -21,28 +21,28 @@ public class Driver {
      */
 
     private Driver(){
-        // bu constructor default cons.ile ayni islevi yapan parametresiz constructor'dir
-        // buna erisimi kontrol edebilecegimiz icin cons.olusturduk
+        // Bu constructor default constructor ile ayni islevi yapan parametresiz constructor'dir
+        // buna erisimi kontrol edebilecegimiz icin bu constructor'i olusturduk
     }
-    static WebDriver driver; // biz deger atamadigimiz icin Java default olarak null point eder
 
-    public static WebDriver getDriver() {
+    static WebDriver driver;   // biz deger atamadigimiz icin Java default olarak null point eder
+    public static WebDriver getDriver(){
 
         String browser = ConfigReader.getProperty("browser");
 
-        if (driver == null) {
+        if (driver == null){
 
-            switch (browser) {
+            switch (browser){
 
-                case "safari":
+                case "safari" :
                     WebDriverManager.safaridriver().setup();
-                    driver = new SafariDriver();
+                    driver= new SafariDriver();
                     break;
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
-                    driver = new FirefoxDriver();
+                    driver= new FirefoxDriver();
                     break;
-                case "edge":
+                case "edge" :
                     WebDriverManager.edgedriver().setup();
                     driver = new EdgeDriver();
                     break;
@@ -51,20 +51,27 @@ public class Driver {
                     driver = new ChromeDriver();
             }
 
-
+            driver.manage().window().maximize();
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         }
 
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+
 
         return driver;
     }
 
-
-    public static void closeDriver() {
-        if (driver != null) {
+    public static void closeDriver(){
+        if (driver != null){
             driver.close();
-            driver = null;
+            driver=null;
         }
     }
+
+    public static void quitDriver(){
+        if (driver != null){
+            driver.quit();
+            driver=null;
+        }
+    }
+
 }

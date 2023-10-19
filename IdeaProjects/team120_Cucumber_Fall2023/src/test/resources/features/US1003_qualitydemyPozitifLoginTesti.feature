@@ -1,5 +1,6 @@
 Feature: US1003 kullanici gecerli bilgilerle sayfaya giris yapar
 
+  @smoke
   Scenario: TC05 qualitydemy pozitif login testi
 
     Given kullanici "qdUrl" anasayfaya gider
@@ -9,3 +10,5 @@ Feature: US1003 kullanici gecerli bilgilerle sayfaya giris yapar
     And login butonuna basar
     Then basarili giris yapildigini test eder
     And sayfayi kapatir
+
+
