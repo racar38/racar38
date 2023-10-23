@@ -1,6 +1,6 @@
 Feature: US1009 Webdriver university testi
 
-  @web
+
   Scenario: TC13 coklu window testi
 
     Given kullanici "webUniUrl" anasayfaya gider

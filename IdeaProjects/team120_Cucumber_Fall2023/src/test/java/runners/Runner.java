@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/cucumber.xml"}, // rapor olusturmak icin yazdik
         features = "src/test/resources/features",
         glue = "stepdefinitions", // java kodlarimiz -- javayla baglayan
-        tags = "@smoke",
+        tags = "@wip",
         dryRun = false
 )
 public class Runner {
@@ -36,8 +36,6 @@ public class Runner {
 
     rapor alabilmek icin Runner dan calistirmak gerekir
      */
-
-
 
     // Biz " " olarak yazdigimizda bunu parametre oalrak algilar cucumber
     // rakami bu sekilde belirtmeye gerek yoktur rakamlari direk parametre oarak algilar

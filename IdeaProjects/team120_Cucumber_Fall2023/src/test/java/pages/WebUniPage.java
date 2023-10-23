@@ -8,16 +8,14 @@ import utilities.Driver;
 public class WebUniPage {
 
     public WebUniPage(){
-
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-     @FindBy(xpath = "//h1[text()='LOGIN PORTAL']")
-     public WebElement loginPortalButonu;
+    @FindBy(xpath = "//*[text()='CONTACT US']")
+    public WebElement contactUsButonu;
 
-
-    @FindBy(xpath = "//h1[text()='CONTACT US']")
-    public WebElement ContactUsButonu;
+    @FindBy(xpath = "//*[text()='LOGIN PORTAL']")
+    public WebElement loginPortalButonu;
 
     @FindBy(xpath = "//input[@id='text']")
     public WebElement usernameKutusu;
@@ -28,4 +26,21 @@ public class WebUniPage {
     @FindBy(xpath = "//*[@id='login-button']")
     public WebElement loginButonu;
 
+    @FindBy(linkText = "Our Products")
+    public WebElement ourProductLinki;
+
+    @FindBy(xpath = "//iframe[@id='frame']")
+    public WebElement iFrameElementi;
+
+    @FindBy(xpath = "//p[text()='Cameras']")
+    public WebElement camerasElementi;
+
+    @FindBy(xpath = "//h4")
+    public WebElement alertYaziElementi;
+
+    @FindBy(xpath = "//button[text()='Close']")
+    public WebElement alertKapatButonu;
+
+    @FindBy(xpath = "(//a[@id='nav-title'])[1]")
+    public WebElement webDriverLinki;
 }
